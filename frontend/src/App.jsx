@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./assets/components/Navbar";
 import HomePage from "./assets/pages/HomePage";
-import ProductPage from "./assets/components/ProductPage";
 import { Route, Routes } from "react-router-dom";
-
+import ProductCard from "./assets/components/ProductCard";
+import Toaster from "react-hot-toast";
 function App() {
   return (
     <div
@@ -14,8 +14,10 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products/:id" element={<ProductPage />} />
+        <Route path="/products/:id" element={<ProductCard />} />
       </Routes>
+
+      <Toaster/>
     </div>
   );
 }

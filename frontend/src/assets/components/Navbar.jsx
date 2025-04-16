@@ -30,7 +30,7 @@ const Navbar = () => {
 
         {/* right section */}
         <div  className="flex item-center gap-4">
-         <p> <ThemeSelector/></p>
+         <ThemeSelector/>
 
           {ishomepage && (
             <div className="indicator">
