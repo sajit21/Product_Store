@@ -1,25 +1,25 @@
 import React from "react";
-import Navbar from "./assets/components/Navbar";
-import HomePage from "./assets/pages/HomePage";
-import { Route, Routes } from "react-router-dom";
-import ProductCard from "./assets/components/ProductCard";
-import Toaster from "react-hot-toast";
-function App() {
+// import Form from "./components/Form";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import { Routes,Route } from "react-router-dom";
+
+const App = () => {
   return (
-    <div
-      className="min-h-screen bg-base-200  transition-colors duration-300"
-      
-    >
+    // <div className="flex flex-col md:flex-row w-full min-h-screen bg-blue-300 justify-between items-center px-8 py-8 gap-8">
+    <div className="max-w-screen-2xl  bg-white w-full mx-auto sm:px-4 md:px-6 lg:px-8">
       <Navbar />
-
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/products/:id" element={<ProductCard />} />
-      </Routes>
+      <Route path="/" element={<HomePage />}></Route>
+      <Route path="/about" element={<AboutPage/>}></Route>
+      <Route path="/contact" element={<ContactPage />}></Route>
 
-      <Toaster/>
-    </div>
+
+      </Routes>
+      </div>
   );
-}
+};
 
 export default App;
