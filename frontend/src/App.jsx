@@ -5,6 +5,8 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import { Routes,Route } from "react-router-dom";
+import ProductPage from "./pages/ProductPage";
+import Signup from "./components/signup";
 
 const App = () => {
   return (
@@ -13,11 +15,15 @@ const App = () => {
       <Navbar />
       <Routes>
       <Route path="/" element={<HomePage />}></Route>
+            {/* <Route path="/signup" element={<signup/>}></Route> */}
+
+      <Route path="/product" element={<ProductPage />}></Route>
       <Route path="/about" element={<AboutPage/>}></Route>
       <Route path="/contact" element={<ContactPage />}></Route>
 
-
+       
       </Routes>
+      
       </div>
   );
 };
