@@ -24,7 +24,7 @@ const Navbar = () => {
           </button>
 
           {/* desktop show */}
-          <div className="hidden sm:flex justify-center items-center flex-1 px-3 py-4 gap-8">
+              <div className="hidden sm:flex justify-center items-center flex-1 px-3 py-4 gap-8">
             <Link to="/" className="hover:text-green-300 font-medium transition">Home</Link>
             <Link to="/product" className="hover:text-green-300 font-medium transition">Products</Link>
             <Link to="/About" className="hover:text-green-300 font-medium transition">AboutUs</Link>
